@@ -116,4 +116,5 @@ body{
 .user{
     display: flex;
     background: linear-gradient(45deg, var(--Light_Violet), var(--Light_Magenta));
+    border-radius: 1rem 1rem 0.5rem 0.5rem;
 }

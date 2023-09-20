@@ -120,7 +120,52 @@ body{
     border-radius: 1rem 1rem 0.5rem 0.5rem;
 }
 
+.less::before{
+    content: "\003C";
+    color: var(--White);
+    font-size: 1.5rem;
+}
+
 .user_image img{
     border-radius: 100%;
     border: 3px solid white;
+    max-width: 4rem;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--White);
+    line-height: 1.5rem;
+}
+
+.user_status{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.dots {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+}
+
+.dots::before {
+    content: "\22EE";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--White);
+    font-size: 1.5rem;
+}
+
+.dots::before {
+    transform: translate(-50%, -0.5rem);
 }

@@ -118,6 +118,19 @@ body{
     align-items: center;
     background: linear-gradient(45deg, var(--Light_Violet), var(--Light_Magenta));
     border-radius: 1rem 1rem 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem;
+}
+
+.left::before{
+    content: " ";
+    background: var(--White);
+    width: 10rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: absolute;
+    top: 11rem;
+    left: 8rem;
 }
 
 .less::before{
@@ -129,7 +142,7 @@ body{
 .user_image img{
     border-radius: 100%;
     border: 3px solid white;
-    max-width: 4rem;
+    max-width: 3rem;
 }
 
 .user_info{
@@ -168,4 +181,24 @@ body{
 
 .dots::before {
     transform: translate(-50%, -0.5rem);
+}
+
+.chat{
+    background: var(--Light_Grayish_Violet);
+}
+
+.message{
+    max-width: 20ch;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.from{
+    background: hsl(276deg 55% 52% / 10%);
+    color: var(--Moderate_Violet);
+}
+
+.to{
+    background: var(--White);
+    color: var(--Desaturated_Dark_Violet);
 }

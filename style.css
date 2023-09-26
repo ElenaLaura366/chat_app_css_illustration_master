@@ -111,7 +111,7 @@ body{
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    /*width: 30rem;*/
 }
 
 .user{
@@ -120,8 +120,14 @@ body{
     background: linear-gradient(45deg, var(--Light_Violet), var(--Light_Magenta));
     border-radius: 1rem 1rem 0.5rem 0.5rem;
     padding: 1.5rem 0.5rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.user > div{
+    display: flex;
+    align-items: center;
+}
 /*.left::before{
     content: " ";
     background: var(--White);
@@ -190,6 +196,7 @@ body{
     flex-direction: column;
     padding: 1rem;
     font-size: 14px;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .message{
@@ -275,10 +282,11 @@ body{
     align-items: center;
     background: linear-gradient(270deg, var(--Light_Violet), var(--Light_Magenta));
     border-radius: 1rem 1rem 1rem 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     width: 70%;
     color: var(--White);
     margin-top: 0.75rem;
+    justify-content: space-between;
 }
 
 .price span{
@@ -289,8 +297,45 @@ body{
     margin-right: 1rem;
 }
 
-.price p:last-child{
-    margin-left: 5rem;
+.price > p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.price div{
+    display: flex;
+    align-items: center;
+}
+
+.price div p{
+    color: var(--Light_Grayish_Violet);
+}
+
+.send_message{
+    display: flex;
+    justify-content: space-between;
+    background: var(--White);
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.send_message p{
+    color: var(--Grayish_Blue);
+    margin-left: 1rem;
+}
+
+.send_message button{
+    background: var(--Very_Dark_Desaturated_Violet);
+    border: 0;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--White);
+    margin-right: -0.5rem;
 }
 
 .right{

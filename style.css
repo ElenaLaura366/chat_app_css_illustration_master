@@ -382,3 +382,45 @@ body::after{
     max-width: 45ch;
     color: var(--Dark_Grayish_Violet);
 }
+
+@media (max-width: 500px) {
+
+    body::before {
+        width: 100%;
+        height: 95%;
+        left: -15rem;
+        top: -10rem;
+    }
+
+    body::after {
+        width: 100%;
+        height: 90%;
+        right: -14rem;
+        bottom: -13rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .user::before {
+        left: 9.5rem;
+        top: 5rem;
+    }
+
+    .right {
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+        max-width: 30ch;
+        margin-top: 3rem;
+    }
+
+    .right h1{
+        margin-bottom: 1rem;
+    }
+}

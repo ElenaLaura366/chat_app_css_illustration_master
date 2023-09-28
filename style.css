@@ -140,6 +140,7 @@ body::after{
 }
 
 .user{
+    position: relative;
     display: flex;
     align-items: center;
     background: linear-gradient(45deg, var(--Light_Violet), var(--Light_Magenta));
@@ -158,12 +159,12 @@ body::after{
     content: " ";
     background: var(--White);
     width: 10rem;
-    height: 2rem;
+    height: 1.5rem;
     margin: 0 auto;
     border-radius: 0 0 1rem 1rem;
     position: absolute;
-    left: 22.5rem;
-    top: 4.7rem;
+    left: calc(50% - 5rem);
+    top: 0px;
 }
 
 .less::before{
@@ -405,11 +406,6 @@ body::after{
         justify-content: center;
         align-items: center;
         padding: 5rem 0;
-    }
-
-    .user::before {
-        left: 9.5rem;
-        top: 5rem;
     }
 
     .right {
